@@ -1,36 +1,36 @@
-COMO COLOCAR SUAS ARTES NO PORTFÓLIO
-====================================
+ARTES ATUAIS DO PORTFÓLIO
+=========================
 
-Salve as imagens NESTA PASTA (public/assets/portfolio/) com EXATAMENTE
-estes nomes. A página já está apontando para eles.
-
-Enquanto o arquivo não existir, o card mostra um bloco decorativo com
-o nome do projeto — nada quebra, mas o ideal é colocar as artes.
-
-ARQUIVO                             ARTE (do seu Instagram)
+ARQUIVO                          ARTE
 ------------------------------------------------------------------
-01-ai-native.jpg                    "AS PLATAFORMAS AI-NATIVE JÁ ESTÃO AQUI"
-02-vibe-coding.jpg                  "ISSO É VIBE CODING" (cenário em blocos)
-03-burger-oferta.jpg                "SE BATEU A FOME, JÁ SABE ONDE PEDIR"
-04-pet-arte.jpg                     "AGORA É A VEZ DO SEU PET"
-05-dia-dos-pais.jpg                 "FELIZ DIA DOS PAIS" (pai carregando o filho)
-06-construcao.jpg                   "CONSTRUA COM QUALIDADE"
-07-carrossel-programacao.jpg        Capa "5 CURIOSIDADES ... PROGRAMAÇÃO"
-08-pizzaria.jpg                     "A MELHOR OPÇÃO PARA O FIM DE SEMANA"
-09-carrossel-sonic.jpg              Capa "5 DICAS DE COMO PRENDER A ATENÇÃO"
-10-pet-estilos.jpg                  "UMA ARTE COM A CARA DO SEU PET" (3 estilos)
-11-carrossel-pacman.jpg             Capa "5 HÁBITOS QUE ESTÃO ATRASANDO..."
-12-entrega-rapida.jpg               "ENTREGA RÁPIDA É AQUI!"
+01-burger-hoje-tem.jpg           "Hoje tem burger da casa"
+02-burger-melhor-regiao.jpg      "O melhor hambúrguer da região"
+03-pet-faca-arte.jpg             "Faça a arte do seu pet"
+04-burger-2-por-45.jpg           "2 burgers por R$ 45"
+05-construcao-tijolo-bom.jpg     "Tijolo bom faz diferença"
+06-pizza-fim-de-semana.jpg       "A melhor opção para o fim de semana"
+07-pizza-peca-ja.jpg             "A melhor pizza da cidade? Peça já!"
+08-pizza-delivery-vapor.jpg      "Nosso delivery está a todo vapor!"
+09-pizza-desconto.jpg            "Ganhe 5% de desconto"
+10-construcao-qualidade.jpg      "Construa com qualidade"
+11-construcao-economia.jpg       "Economia de verdade"
+12-dia-dos-pais-memorias.jpg     "Os melhores momentos viram memórias"
+13-dia-dos-pais-obrigado.jpg     "Obrigado por sempre estar aqui"
 
-DICAS
------
-- Formato: .jpg (se usar .png ou .webp, troque a extensão também em
-  src/data/conteudo.js)
-- Proporção: 4:5 (1080 x 1350 px) — é a proporção que os cards usam
-- Peso: até ~300 KB por imagem. Comprima em squoosh.app ou tinypng.com
-  para a página abrir rápido no celular.
-- Os cards cortam a imagem a partir do TOPO, então o título da arte
-  sempre aparece.
+ATENÇÃO — essas peças têm texto placeholder visível
+----------------------------------------------------
+Várias têm "(99) 99999-9999", "Seu endereço aqui" ou "Rua sem nome,
+555" no rodapé. Isso é normal em template/mockup de demonstração,
+mas num portfólio que vende serviço profissional pode passar a
+impressão de que não é trabalho real e finalizado.
+
+Vale considerar, quando puder:
+  - substituir por peças de clientes reais (com autorização deles), ou
+  - editar essas mesmas artes trocando o texto placeholder por algo
+    genérico mas plausível (ex.: nome fictício de negócio combinando
+    com a arte, em vez de "(99) 99999-9999"), ou
+  - manter assim mesmo, deixando claro em algum lugar do site que são
+    conceitos/estilos de demonstração.
 
 TROCAR, ADICIONAR OU REMOVER PROJETO
 ------------------------------------
@@ -40,12 +40,12 @@ Procure as listas `projetos` (antes do CTA) e `projetosExtras`
 (depois do CTA). Cada projeto é um objeto assim:
 
   {
-    arquivo: '01-ai-native.jpg',      // nome do arquivo nesta pasta
+    arquivo: '01-burger-hoje-tem.jpg', // nome do arquivo nesta pasta
     cols: 6,                          // 6 = linha de 2 cards | 4 = linha de 3
-    rotulo: 'AI-NATIVE',              // texto do bloco quando não há imagem
-    categoria: 'Tecnologia · Post',   // etiqueta azul acima do título
-    titulo: 'As plataformas...',      // nome do projeto
-    alt: 'Post sobre...',             // descrição (acessibilidade e SEO)
+    rotulo: 'BURGER',                 // texto do bloco quando não há imagem
+    categoria: 'Hamburgueria · Anúncio', // etiqueta azul acima do título
+    titulo: 'Hoje tem burger da casa',   // nome do projeto
+    alt: 'Anúncio de hambúrguer...',     // descrição (acessibilidade e SEO)
   }
 
 IMPORTANTE sobre `cols`: mantenha cada linha somando 12.
@@ -53,9 +53,11 @@ IMPORTANTE sobre `cols`: mantenha cada linha somando 12.
   4 + 4 + 4    = uma linha com 3 cards médios
 Se a soma não fechar 12, o grid abre buracos.
 
+Formato: .jpg. Proporção recomendada: 4:5 (os cards cortam a partir
+do topo, então o título da arte sempre aparece).
+
 SEU LOGO
 --------
 Já está em: public/assets/logo.jpg
 Se quiser trocar por uma versão melhor, salve com esse mesmo nome
 (quadrado, 72x72 px ou maior) que ele substitui sozinho.
-Se não colocar, o quadradinho continua aparecendo normalmente.
