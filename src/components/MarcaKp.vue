@@ -6,10 +6,10 @@ defineProps({
   tamanho: { type: Number, default: 36 },
 })
 
-// Se existir public/assets/logo.png, ele aparece.
+// Se existir public/assets/logo.jpg, ele aparece.
 // Se não, fica o selo "KP" — nada de ícone quebrado.
 const temLogo = ref(true)
-const logo = urlPublica('assets/logo.png')
+const logo = urlPublica('assets/logo.jpg')
 </script>
 
 <template>

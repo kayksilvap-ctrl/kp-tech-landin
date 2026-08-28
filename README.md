@@ -34,7 +34,7 @@ tanto na raiz do domínio quanto em subpasta.
 | Número do WhatsApp e mensagens dos botões | `src/composables/useWhatsapp.js` |
 | Projetos do portfólio, serviços, passos, dúvidas, menu | `src/data/conteudo.js` |
 | Artes do portfólio (imagens) | `public/assets/portfolio/` — veja o `LEIA-ME.txt` de lá |
-| Logo da marca | `public/assets/logo.png` |
+| Logo da marca | `public/assets/logo.jpg` |
 | Cores e tipografia | `src/styles/main.css` (tokens no `:root`) e `src/plugins/vuetify.js` |
 
 ---

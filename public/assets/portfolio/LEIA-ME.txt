@@ -55,6 +55,7 @@ Se a soma não fechar 12, o grid abre buracos.
 
 SEU LOGO
 --------
-Salve o logo KP em: public/assets/logo.png (quadrado, 72x72 px ou maior).
-Ele substitui automaticamente o quadradinho "KP" da navbar e do rodapé.
+Já está em: public/assets/logo.jpg
+Se quiser trocar por uma versão melhor, salve com esse mesmo nome
+(quadrado, 72x72 px ou maior) que ele substitui sozinho.
 Se não colocar, o quadradinho continua aparecendo normalmente.
