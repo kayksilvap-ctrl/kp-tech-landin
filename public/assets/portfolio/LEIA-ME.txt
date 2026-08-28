@@ -1,0 +1,60 @@
+COMO COLOCAR SUAS ARTES NO PORTFÓLIO
+====================================
+
+Salve as imagens NESTA PASTA (public/assets/portfolio/) com EXATAMENTE
+estes nomes. A página já está apontando para eles.
+
+Enquanto o arquivo não existir, o card mostra um bloco decorativo com
+o nome do projeto — nada quebra, mas o ideal é colocar as artes.
+
+ARQUIVO                             ARTE (do seu Instagram)
+------------------------------------------------------------------
+01-ai-native.jpg                    "AS PLATAFORMAS AI-NATIVE JÁ ESTÃO AQUI"
+02-vibe-coding.jpg                  "ISSO É VIBE CODING" (cenário em blocos)
+03-burger-oferta.jpg                "SE BATEU A FOME, JÁ SABE ONDE PEDIR"
+04-pet-arte.jpg                     "AGORA É A VEZ DO SEU PET"
+05-dia-dos-pais.jpg                 "FELIZ DIA DOS PAIS" (pai carregando o filho)
+06-construcao.jpg                   "CONSTRUA COM QUALIDADE"
+07-carrossel-programacao.jpg        Capa "5 CURIOSIDADES ... PROGRAMAÇÃO"
+08-pizzaria.jpg                     "A MELHOR OPÇÃO PARA O FIM DE SEMANA"
+09-carrossel-sonic.jpg              Capa "5 DICAS DE COMO PRENDER A ATENÇÃO"
+10-pet-estilos.jpg                  "UMA ARTE COM A CARA DO SEU PET" (3 estilos)
+11-carrossel-pacman.jpg             Capa "5 HÁBITOS QUE ESTÃO ATRASANDO..."
+12-entrega-rapida.jpg               "ENTREGA RÁPIDA É AQUI!"
+
+DICAS
+-----
+- Formato: .jpg (se usar .png ou .webp, troque a extensão também em
+  src/data/conteudo.js)
+- Proporção: 4:5 (1080 x 1350 px) — é a proporção que os cards usam
+- Peso: até ~300 KB por imagem. Comprima em squoosh.app ou tinypng.com
+  para a página abrir rápido no celular.
+- Os cards cortam a imagem a partir do TOPO, então o título da arte
+  sempre aparece.
+
+TROCAR, ADICIONAR OU REMOVER PROJETO
+------------------------------------
+Tudo fica em: src/data/conteudo.js
+
+Procure as listas `projetos` (antes do CTA) e `projetosExtras`
+(depois do CTA). Cada projeto é um objeto assim:
+
+  {
+    arquivo: '01-ai-native.jpg',      // nome do arquivo nesta pasta
+    cols: 6,                          // 6 = linha de 2 cards | 4 = linha de 3
+    rotulo: 'AI-NATIVE',              // texto do bloco quando não há imagem
+    categoria: 'Tecnologia · Post',   // etiqueta azul acima do título
+    titulo: 'As plataformas...',      // nome do projeto
+    alt: 'Post sobre...',             // descrição (acessibilidade e SEO)
+  }
+
+IMPORTANTE sobre `cols`: mantenha cada linha somando 12.
+  6 + 6        = uma linha com 2 cards grandes
+  4 + 4 + 4    = uma linha com 3 cards médios
+Se a soma não fechar 12, o grid abre buracos.
+
+SEU LOGO
+--------
+Salve o logo KP em: public/assets/logo.png (quadrado, 72x72 px ou maior).
+Ele substitui automaticamente o quadradinho "KP" da navbar e do rodapé.
+Se não colocar, o quadradinho continua aparecendo normalmente.
